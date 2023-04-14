@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+    <h2 id="heading" class="box">
+        New User
+    </h2>
+    <div class="btn-new-user">
+        <a href="/home">
+            <button>
+                <span>
+                    Home Page
+                </span>
+            </button>
+        </a>
+    </div>
+    <div class="form-section">
+        <form method="POST" action="/articles">
+            <label for="name" class="form-label">First name:</label><br>
+            <input type="hidden" name="id" value="<%=w._id%>" class="form-input">
+            <input type="text" id="name" name="name" value="<%=w.name%>" placeholder="Sankalp Gupta"
+                class="form-input"><br><br>
+            <label for="email" class="form-label">Enter your email:</label>
+            <input type="email" id="email" name="email" value="<%=w.email%>" placeholder="abc@123"
+                class="form-input"><br><br>
+            <label for="score" class="form-label">Enter your score:</label>
+            <input type="number" id="score" name="score" value="<%=w.score%>" placeholder="99"
+                class="form-input"><br><br>
+            <br><br>
+            <button type="submit" value="Submit" class="btn btn-primary block">save</button>
+        </form>
+    </div>
+    <%- include('partials/footer') %>

@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<h2 id="heading" class="box">
+    New User
+</h2>
+<div class="btn-new-user">
+    <a href="/home">
+        <button>
+            <span>
+               Home Page
+            </span>
+        </button>
+    </a>
+</div>
+
+<div class="form-section">
+    <form method="post" action="/articles">
+        <label for="name" class="form-label">First name:</label><br>
+        <input type="hidden" name="id" value="" class="form-input">
+        <input type="text" id="name" name="name" value="" placeholder="Sankalp Gupta" class="form-input"><br><br>
+        <label for="email" class="form-label">Enter your email:</label>
+        <input type="email" id="email" name="email" value="" placeholder="abc@123" class="form-input"><br><br>
+        <label for="score" class="form-label">Enter your score:</label>
+        <input type="number" id="score" name="score" value="" placeholder="99" class="form-input"><br><br>
+        <button type="submit" value="Submit" class="btn btn-primary block" >save</button>
+      </form>
+</div>
+<%- include('partials/footer') %>

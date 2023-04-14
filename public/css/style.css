@@ -1,0 +1,100 @@
+body{
+  background-color:#A683E3;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+}
+button 
+{
+    padding: 0;
+    border: none;
+    font-family: "Architects Daughter", cursive;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    background-color: #ffeaa7;
+}
+button span 
+{
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid hsl(198, 1%, 29%);
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #A683E3;
+  text-align: center;
+}
+.btn-new-user{
+  text-align: center;
+}
+
+.table-section{
+  max-width: 950px;
+  margin: 50px auto;
+  
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); 
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  padding:10px 0px;
+}
+.table-body{
+  padding:10px 40px;
+  text-align: center;
+}
+.table-hover:hover{
+  background-color:#A683E3;
+}
+th{
+  text-align: center;
+}
+
+.updated-delete{
+  display:inline-block;
+}
+.form-section{
+  text-align: center;
+  max-width: 500px;
+  margin:auto;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  min-height: 400px;
+  margin: 50px auto;
+  padding:10px 0px;
+
+}
+.form-input{
+  width:500px;
+}
+.form-label{
+  float:left;
+}
+.status{
+  padding:0 20px;
+  float:left;
+}
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}

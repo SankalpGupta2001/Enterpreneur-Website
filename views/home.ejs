@@ -1,0 +1,84 @@
+<%- include('partials/header') %>
+    <div class="container">
+        <h4 class="box" id="heading">Student Details</h4>
+        <div class="btn-new-user">
+            <a href="/New-user">
+                <button>
+                    <span>
+                        New User
+                    </span>
+                </button>
+            </a>
+            <a href="/logout">
+                <button>
+                    <span>
+                        Logout
+                    </span>
+                </button>
+            </a>
+        </div>
+        <div class="table-section">
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="table-head-section">
+                        <th class="table-heading">
+                            id
+                        </th>
+                        <th class="table-heading">
+                            Student Name
+                        </th>
+                        <th class="table-heading">
+                            @Email
+                        </th>
+                        <th class="table-heading">
+                            Score
+                        </th>
+                        <th class="table-heading">
+                            Status
+                        </th>
+                        <th class="table-heading">
+                            Action
+                        </th>
+
+                    </thead>
+                    <tbody class="table-body-section">
+                        <% for(var i=0;i<users.length;i++){%>
+                            <tr class="table-hover">
+                                <td class="table-body">
+                                    <%= i+1 %>
+                                </td>
+                                <td class="table-body">
+                                    <%= users[i].name%>
+                                </td>
+                                <td class="table-body">
+                                    <%= users[i].email%>
+                                </td>
+                                <td class="table-body">
+                                    <%= users[i].score%>
+                                </td>
+                                <td class="table-body">
+                                    <%= users[i].status%>
+                                </td>
+                                <td class="table-body">
+                                    <div class="btn-group">
+                                        <a href="/updated-user?id=<%= users[i]._id%>" class="btn btn-outline-primary">
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                                <span>
+                                        </a>
+                                        <a class="btn btn-outline-primary" href="/deleted-user?id=<%=users[i]._id%>">
+                                            <span class="material-symbols-outlined">
+                                                content_cut
+                                            </span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <%}%>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </div>
+    <%- include('partials/footer') %>
